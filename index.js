@@ -19,6 +19,7 @@ function chutar() {
         resultado.innerHTML = "Errou, o número secreto é maior que " + chute;
     }
 
+    var denovoHtml = document.getElementById("denovo");
 
     var chancesHtml = document.getElementById("chances");
 
@@ -29,6 +30,7 @@ function chutar() {
 
     if (chances === 0) {
         chancesHtml.innerHTML = "Suas tentativas acabaram, o número secreto é o " + numeroSecreto;
+        denovoHtml.innerHTML = "Atualize a página e tente denovo!!"
     }
 
   }
