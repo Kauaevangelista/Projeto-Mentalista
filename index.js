@@ -9,6 +9,8 @@ function chutar() {
 
     var chute = parseInt(document.getElementById("valor").value);
 
+    parseInt(document.getElementById("valor").value = "");
+
     if (chute === numeroSecreto) {
         resultado.innerHTML = "Parabéns, Você Acertou";
     } else if (chute > 10 || chute < 0) {
